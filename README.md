@@ -24,6 +24,7 @@ This initial release was developed as a weekend project by [@mrmidi](https://twi
 * Open GeoJSON Maps via `File > Open` Menu
 * Open GeoJSON Maps via Drag & Drop onto App
 * Open GeoJSON Maps via Command Line ( as either raw data or file path )
+* Built with Multiple Language Support ( just add a JSON file in `./translations` )
 * Six different Map Themes: Dark, Light, Outdoors, Satellite, Streets & Hybrid ( Satellite Streets )
 * Slide out Drawer to preview GeoJSON Map Properties for Clicked Features
 * Automatic Data Conversion of URLs & Images for instant previews

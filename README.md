@@ -13,7 +13,7 @@ We built this app because we are creating a few thousand GoeJSON files and disco
 
 ![App Demo](resources/app-demo.gif "App Demo")
 
-#### [See Full Demo Video](https://vimeo.com/202877564)
+## [See Full Demo Video](https://vimeo.com/202877564)
 
 App Features
 ---
@@ -42,22 +42,22 @@ npm install -g civil-services-geojson-app
 Launch App
 ---
 
-#### Open the App
+You can launch the app using a Terminal Window via:
 
-Directly by Name:
+#### Directly by Name:
 
 ```bash
 geojson
 ```
 
-Via NPM Script:
+#### Via NPM Script:
 
 ```bash
 cd /path/to/this/project
 npm start
 ```
 
-Via Node:
+#### Via Node:
  
  ```bash
  cd /path/to/this/project

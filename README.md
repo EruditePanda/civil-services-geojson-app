@@ -92,24 +92,38 @@ If you are feeling a bit adventurous and want to actually build the app on your 
 
 #### MacOS
 
+If you are on a MacoOS you can simply run:
+
 ```bash
-npm run build-osx
+npm run build-macos
+```
+
+If you have more than one Developer Profile on your Mac, Yyou will need to set a `CSC_NAME` Environmental Variable to use for building Mac OS apps.
+
+To determine what your `CSC_NAME` value should be, you can open Keychain Access and look for `Developer ID Installer`.  If your certificate name is `Developer ID Installer: Jane Doe (CS3BE56SC5)` the value you want is `Jane Doe (CS3BE56SC5)`
+
+Then you can run
+
+```bash
+export CSC_NAME="Jane Doe (CS3BE56SC5)" && npm run build-macos
 ```
 
 #### Windows
 
+Build 32 bit Executable:
+
 ```bash
-npm run build-windows
+npm run build-windows-32
+```
+
+Build 64 bit Executable:
+
+```bash
+npm run build-windows-64
 ```
 
 #### Linux
 
 ```bash
 npm run build-linux
-```
-
-#### MacOS App Store
-
-```bash
-npm run build-osx-app-store
 ```

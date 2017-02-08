@@ -514,6 +514,18 @@ app.on('activate', () => {
 
 app.on('will-finish-launching', () => {
   app.on('open-file', (ev, path) => {
-    console.log('open-file', path)
+    if (mainWindow) {
+      mainWindow.webContents.send('load-file', path)
+    }
+
+    ev.preventDefault()
   })
+})
+
+app.on('open-url', (ev, path) => {
+  if (mainWindow) {
+    mainWindow.webContents.send('load-file', path)
+  }
+
+  ev.preventDefault()
 })

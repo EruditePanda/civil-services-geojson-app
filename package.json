@@ -22,28 +22,25 @@
   "build": {
     "appId": "app.civil-services.geojson",
     "mac": {
-      "category": "public.app-category.developer-tools"
-    },
-    "win": {
-      "iconUrl": "(windows-only) https link to icon"
+      "category": "public.app-category.developer-tools",
+      "fileAssociations": [
+        {
+          "ext": "json",
+          "name": "JSON",
+          "role": "Viewer"
+        },
+        {
+          "ext": "geojson",
+          "name": "GeoJSON",
+          "role": "Viewer"
+        }
+      ]
     },
     "dmg": {
       "background": "build/background.png",
       "icon": "build/icon.icns",
       "title": "GeoJSON"
-    },
-    "fileAssociations": [
-      {
-        "ext": "json",
-        "name": "JSON",
-        "role": "Viewer"
-      },
-      {
-        "ext": "geojson",
-        "name": "GeoJSON",
-        "role": "Viewer"
-      }
-    ]
+    }
   },
   "bin": {
     "geojson": "./bin/cli.js"

@@ -37,6 +37,7 @@ Developer Requirements
 ---
 
 * [Yarn](https://yarnpkg.com)
+* [Node](https://nodejs.org)
 
 Install App
 ---

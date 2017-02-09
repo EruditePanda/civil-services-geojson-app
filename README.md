@@ -9,7 +9,7 @@ GeoJSON Mapbox Electron App
 
 #### Electron App for Loading GeoJSON files with Mapbox
 
-We built this app because we are creating a few thousand GoeJSON files and discovered that there was no easy way to view them on your local computer. Since GeoJSON files are important to our development process, and likely important to yours, we decided to spend the time to make a native app that you can use to open GeoJSON files on your local machine.
+We built this app because we are creating a few thousand GeoJSON files and discovered that there was no easy way to view them on your local computer. Since GeoJSON files are important to our development process, and likely important to yours, we decided to spend the time to make a native app that you can use to open GeoJSON files on your local machine.
 
 ![App Demo](resources/app-demo.gif "App Demo")
 

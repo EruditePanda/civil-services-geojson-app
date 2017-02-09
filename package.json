@@ -40,6 +40,14 @@
       "background": "build/background.png",
       "icon": "build/icon.icns",
       "title": "GeoJSON"
+    },
+    "linux": {
+      "category": "Development",
+      "executableName": "GeoJSON",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
     }
   },
   "bin": {
@@ -64,9 +72,12 @@
     "test": "echo 'not tests'",
     "start": "electron .",
     "build-linux": "build --linux",
-    "build-macos": "build --macos",
-    "build-windows-32": "build --windows --ia32",
-    "build-windows-64": "build --windows --x64"
+    "build-macos": "build --macos && yarn run cleanup-macos",
+    "build-windows-32": "build --windows --ia32 && yarn run cleanup-windows-32",
+    "build-windows-64": "build --windows --x64",
+    "cleanup-macos": "mv ./dist/mac/GeoJSON-* ./dist/macos/ && mv ./dist/github/latest-mac.json ./dist/macos/ && rm -fr ./dist/mac/ && rm -fr ./dist/github/",
+    "cleanup-windows-32": "mv ./dist/GeoJSON*.exe ./dist/windows-32bit/ && mv ./dist/latest.yml ./dist/windows-32bit/ && rm -fr ./dist/win-ia32-unpacked/",
+    "cleanup-windows-64": "mv ./dist/GeoJSON*.exe ./dist/windows-64bit/ && mv ./dist/latest.yml ./dist/windows-64bit/ && rm -fr ./dist/win-unpacked/"
   },
   "devDependencies": {
     "asar": "^0.12.4",

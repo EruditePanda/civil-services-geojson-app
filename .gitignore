@@ -8,3 +8,8 @@ syntax: glob
 Thumbs.db
 .idea
 *.log
+dist/github
+dist/mac
+dist/win-ia32-unpacked
+dist/win-unpacked
+dist/linux-unpacked

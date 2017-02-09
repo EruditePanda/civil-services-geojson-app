@@ -15,6 +15,7 @@ We built this app because we are creating a few thousand GoeJSON files and disco
 
 ## [See Full Demo Video](https://vimeo.com/202877564)
 
+
 App Features
 ---
 
@@ -31,13 +32,19 @@ This initial release was developed as a weekend project by [@mrmidi](https://twi
 * Automatically reloads the last file you were looking at when you restart the app
 * Keeps track of your app preferences ( selected theme, window size & location )
 
+
+Developer Requirements
+---
+
+* [Yarn](https://yarnpkg.com)
+
 Install App
 ---
 
-Installation is done via NPM Installation:
+Installation is done via Yarn Installation:
 
 ```bash
-npm install -g civil-services-geojson-app
+yarn install -g civil-services-geojson-app
 ```
 
 Launch App
@@ -51,11 +58,11 @@ You can launch the app using a Terminal Window via:
 geojson
 ```
 
-#### Via NPM Script:
+#### Via Yarn Script:
 
 ```bash
 cd /path/to/this/project
-npm start
+yarn start
 ```
 
 #### Via Node:
@@ -95,7 +102,7 @@ If you are feeling a bit adventurous and want to actually build the app on your 
 If you are on a MacoOS you can simply run:
 
 ```bash
-npm run build-macos
+yarn run build-macos
 ```
 
 If you have more than one Developer Profile on your Mac, Yyou will need to set a `CSC_NAME` Environmental Variable to use for building Mac OS apps.
@@ -105,7 +112,7 @@ To determine what your `CSC_NAME` value should be, you can open Keychain Access 
 Then you can run
 
 ```bash
-export CSC_NAME="Jane Doe (CS3BE56SC5)" && npm run build-macos
+export CSC_NAME="Jane Doe (CS3BE56SC5)" && yarn run build-macos
 ```
 
 #### Windows
@@ -113,17 +120,17 @@ export CSC_NAME="Jane Doe (CS3BE56SC5)" && npm run build-macos
 Build 32 bit Executable:
 
 ```bash
-npm run build-windows-32
+yarn run build-windows-32
 ```
 
 Build 64 bit Executable:
 
 ```bash
-npm run build-windows-64
+yarn run build-windows-64
 ```
 
 #### Linux
 
 ```bash
-npm run build-linux
+yarn run build-linux
 ```

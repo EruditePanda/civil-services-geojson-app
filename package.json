@@ -8,8 +8,8 @@
   "main": "main.js",
   "author": "Civil Service USA Corp",
   "engines": {
-    "node": "6.x",
-    "npm": "4.x"
+    "node": ">=4.4.7 <7.0.0",
+    "yarn": "^0.14.0"
   },
   "keywords": [
     "GeoJSON",

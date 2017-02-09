@@ -14,11 +14,11 @@
 		</data>
 		<key>Resources/app.asar</key>
 		<data>
-		Kz5PrazQeZe/eGLIejQMvj3eO/4=
+		snuY2Q5CRnN7E2U+GM5bW6vDRZg=
 		</data>
 		<key>Resources/electron.asar</key>
 		<data>
-		S2s35JhAc/usbHlWDcPrM9ZIpTQ=
+		0jDpOlzSmRFD2md/8Wjc71Cjko0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -27,7 +27,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			AUaSq7dzHdv0CU2YaRkohCwcGsI=
+			4UG1NYLkjronZSzs+9qR4E1ADzM=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.github.electron.framework" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = CS3BE56SC5</string>
@@ -36,7 +36,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			cuGSGItdqcpy1Z8BGD5SqXGfIs4=
+			WhHPmmkGVkoanJoZ5M8s+oXFNQE=
 			</data>
 			<key>requirement</key>
 			<string>identifier "app.civil-services.geojson.helper.EH" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = CS3BE56SC5</string>
@@ -45,7 +45,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			DrW4IIM78eVA4grrWfsj9IP22To=
+			38Adv1eyLSToTFBMjBlnMHaeuA8=
 			</data>
 			<key>requirement</key>
 			<string>identifier "app.civil-services.geojson.helper.NP" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = CS3BE56SC5</string>
@@ -54,7 +54,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			oobCJ8P6WmsWFdJKMdzmgVOA6DU=
+			PsfMvOHy/7lL/9KkuJFAAzEjjFk=
 			</data>
 			<key>requirement</key>
 			<string>identifier "app.civil-services.geojson.helper" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = CS3BE56SC5</string>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			o1uz9KpzvnT2yzj/BXeN3h9Yypg=
+			Kus4igtLf35ajNuK31u6ghMIvL4=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.github.Squirrel" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = CS3BE56SC5</string>
@@ -112,22 +112,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kz5PrazQeZe/eGLIejQMvj3eO/4=
+			snuY2Q5CRnN7E2U+GM5bW6vDRZg=
 			</data>
 			<key>hash2</key>
 			<data>
-			9ohRpunCAS+n9jsZ2h8dpZKWaxBkticH610fWwbiOFo=
+			v75JC/4O0PkPxC5aJlLh7l/TgnOnDf1N3RvwWq3zdyU=
 			</data>
 		</dict>
 		<key>Resources/electron.asar</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S2s35JhAc/usbHlWDcPrM9ZIpTQ=
+			0jDpOlzSmRFD2md/8Wjc71Cjko0=
 			</data>
 			<key>hash2</key>
 			<data>
-			yklSALDJLnUUQztw14hCTRxTTzzfurfO9B5NLLmEbr0=
+			9XzkUDWzG56mcZqcLHrZGV7zx6Jt3HJnPIJgAZAOVpU=
 			</data>
 		</dict>
 	</dict>

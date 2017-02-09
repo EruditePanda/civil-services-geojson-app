@@ -11,9 +11,14 @@ GeoJSON Mapbox Electron App
 
 We built this app because we are creating a few thousand GeoJSON files and discovered that there was no easy way to view them on your local computer. Since GeoJSON files are important to our development process, and likely important to yours, we decided to spend the time to make a native app that you can use to open GeoJSON files on your local machine.
 
+[![Download MacOS](resources/download-macos.png)](./dist/macos/)
+[![Download Windows 32 Bit](resources/download-windows-32.png)](./dist/windows-32bit/)
+[![Download Windows 64 Bit](resources/download-windows-64.png)](./dist/windows-64bit/)
+
 ![App Demo](resources/app-demo.gif "App Demo")
 
 ## [See Full Demo Video](https://vimeo.com/202877564)
+
 
 App Features
 ---
@@ -31,13 +36,20 @@ This initial release was developed as a weekend project by [@mrmidi](https://twi
 * Automatically reloads the last file you were looking at when you restart the app
 * Keeps track of your app preferences ( selected theme, window size & location )
 
+
+Developer Requirements
+---
+
+* [Yarn](https://yarnpkg.com)
+* [Node](https://nodejs.org)
+
 Install App
 ---
 
-Installation is done via NPM Installation:
+Installation is done via Yarn Installation:
 
 ```bash
-npm install -g civil-services-geojson-app
+yarn install -g civil-services-geojson-app
 ```
 
 Launch App
@@ -51,11 +63,11 @@ You can launch the app using a Terminal Window via:
 geojson
 ```
 
-#### Via NPM Script:
+#### Via Yarn Script:
 
 ```bash
 cd /path/to/this/project
-npm start
+yarn start
 ```
 
 #### Via Node:
@@ -92,24 +104,38 @@ If you are feeling a bit adventurous and want to actually build the app on your 
 
 #### MacOS
 
+If you are on a MacoOS you can simply run:
+
 ```bash
-npm run build-osx
+yarn run build-macos
+```
+
+If you have more than one Developer Profile on your Mac, Yyou will need to set a `CSC_NAME` Environmental Variable to use for building Mac OS apps.
+
+To determine what your `CSC_NAME` value should be, you can open Keychain Access and look for `Developer ID Installer`.  If your certificate name is `Developer ID Installer: Jane Doe (CS3BE56SC5)` the value you want is `Jane Doe (CS3BE56SC5)`
+
+Then you can run
+
+```bash
+export CSC_NAME="Jane Doe (CS3BE56SC5)" && yarn run build-macos
 ```
 
 #### Windows
 
+Build 32 bit Executable:
+
 ```bash
-npm run build-windows
+yarn run build-windows-32
+```
+
+Build 64 bit Executable:
+
+```bash
+yarn run build-windows-64
 ```
 
 #### Linux
 
 ```bash
-npm run build-linux
-```
-
-#### MacOS App Store
-
-```bash
-npm run build-osx-app-store
+yarn run build-linux
 ```

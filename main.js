@@ -1,4 +1,4 @@
-const {app, dialog, shell, protocol, BrowserWindow, Menu} = require('electron')
+const {app, dialog, shell, BrowserWindow, Menu} = require('electron')
 
 const path = require('path')
 const url = require('url')
@@ -388,11 +388,6 @@ const enableOpeningFiles = (enable) => {
  */
 const createWindow = () => {
 
-  protocol.registerFileProtocol('geojson', (request, callback) => {
-    const url = request.url.substr(7)
-    callback({ path: path.normalize(`${__dirname}/${url}`) })
-  })
-
   mainWindow = new BrowserWindow({
     backgroundColor: '#191919',
     width: 1024,
@@ -483,10 +478,18 @@ if (shouldQuit) {
   app.quit()
 }
 
-/**
- * Register Custom Protocol
- */
-protocol.registerStandardSchemes(['geojson'])
+app.on('will-finish-launching', () => {
+  app.on('open-file', (ev, path) => {
+
+    console.log(path)
+
+    if (mainWindow) {
+      mainWindow.webContents.send('load-file', path)
+    }
+
+    ev.preventDefault()
+  })
+})
 
 /**
  * Initialize Electron App
@@ -510,10 +513,4 @@ app.on('activate', () => {
   if (mainWindow === null) {
     createWindow()
   }
-})
-
-app.on('will-finish-launching', () => {
-  app.on('open-file', (ev, path) => {
-    console.log('open-file', path)
-  })
 })

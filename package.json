@@ -75,13 +75,14 @@
     "build-macos": "build --macos && yarn run cleanup-macos",
     "build-windows-32": "build --windows --ia32 && yarn run cleanup-windows-32",
     "build-windows-64": "build --windows --x64 && yarn run cleanup-windows-64",
-    "cleanup-macos": "mv ./dist/mac/GeoJSON-* ./dist/macos/ && mv ./dist/github/latest-mac.json ./dist/macos/ && rm -fr ./dist/mac/ && rm -fr ./dist/github/",
-    "cleanup-windows-32": "mv ./dist/GeoJSON*.exe ./dist/windows-32bit/ && mv ./dist/latest.yml ./dist/windows-32bit/ && rm -fr ./dist/win-ia32-unpacked/",
-    "cleanup-windows-64": "mv ./dist/GeoJSON*.exe ./dist/windows-64bit/ && mv ./dist/latest.yml ./dist/windows-64bit/ && rm -fr ./dist/win-unpacked/"
+    "cleanup-macos": "shx mv ./dist/mac/GeoJSON-* ./dist/macos/ && shx mv ./dist/github/latest-mac.json ./dist/macos/ && shx rm -fr ./dist/mac/ && shx rm -fr ./dist/github/",
+    "cleanup-windows-32": "shx mv ./dist/GeoJSON*.exe ./dist/windows-32bit/ && shx mv ./dist/latest.yml ./dist/windows-32bit/ && shx rm -fr ./dist/win-ia32-unpacked/",
+    "cleanup-windows-64": "shx mv ./dist/GeoJSON*.exe ./dist/windows-64bit/ && shx mv ./dist/latest.yml ./dist/windows-64bit/ && shx rm -fr ./dist/win-unpacked/"
   },
   "devDependencies": {
     "asar": "^0.12.4",
     "electron": "^1.4.15",
-    "electron-builder": "^13.0.0"
+    "electron-builder": "^13.0.0",
+    "shx": "^0.2.2"
   }
 }

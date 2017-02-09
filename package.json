@@ -7,6 +7,10 @@
   "version": "1.0.1",
   "main": "main.js",
   "author": "Civil Service USA Corp",
+  "engines": {
+    "node": "6.x",
+    "npm": "4.x"
+  },
   "keywords": [
     "GeoJSON",
     "Mapbox",
@@ -28,11 +32,18 @@
       "icon": "build/icon.icns",
       "title": "GeoJSON"
     },
-    "protocols": {
-      "name": "GeoJSON",
-      "role": "Editor",
-      "schemes": ["geojson"]
-    }
+    "fileAssociations": [
+      {
+        "ext": "json",
+        "name": "JSON",
+        "role": "Viewer"
+      },
+      {
+        "ext": "geojson",
+        "name": "GeoJSON",
+        "role": "Viewer"
+      }
+    ]
   },
   "bin": {
     "geojson": "./bin/cli.js"

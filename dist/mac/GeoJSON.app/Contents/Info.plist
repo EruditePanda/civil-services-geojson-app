@@ -42,17 +42,31 @@
     <string>AtomApplication</string>
     <key>NSSupportsAutomaticGraphicsSwitching</key>
     <true/>
-    <key>CFBundleURLTypes</key>
+    <key>CFBundleDocumentTypes</key>
     <array>
       <dict>
-        <key>CFBundleURLName</key>
-        <string>GeoJSON</string>
+        <key>CFBundleTypeExtensions</key>
+        <array>
+          <string>json</string>
+        </array>
+        <key>CFBundleTypeName</key>
+        <string>JSON</string>
         <key>CFBundleTypeRole</key>
-        <string>Editor</string>
-        <key>CFBundleURLSchemes</key>
+        <string>Viewer</string>
+        <key>CFBundleTypeIconFile</key>
+        <string>GeoJSON.icns</string>
+      </dict>
+      <dict>
+        <key>CFBundleTypeExtensions</key>
         <array>
           <string>geojson</string>
         </array>
+        <key>CFBundleTypeName</key>
+        <string>GeoJSON</string>
+        <key>CFBundleTypeRole</key>
+        <string>Viewer</string>
+        <key>CFBundleTypeIconFile</key>
+        <string>GeoJSON.icns</string>
       </dict>
     </array>
     <key>NSHumanReadableCopyright</key>
